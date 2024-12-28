@@ -1,0 +1,14 @@
+# OS junk
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# GitHub Pages
+_site/
