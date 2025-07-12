@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alexei Volkov — Staff Software Engineer. C++, Rust, low-latency trading systems." />
+  <title>Alexei Volkov · Low-Latency Systems Engineer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo">avolkov-II</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+          <span class="icon-moon" aria-hidden="true">&#9790;</span>
+          <span class="icon-sun" aria-hidden="true">&#9728;</span>
+        </button>
+        <button id="menuToggle" class="menu-toggle" aria-label="Toggle navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Alexei Volkov</h1>
+        <p class="hero-title">Staff Software Engineer</p>
+        <p class="hero-tagline">
+          I build <span class="highlight">high-performance</span> trading systems<br />
+          at the intersection of <span class="highlight">hardware</span> and <span class="highlight">software</span>.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a systems engineer with <strong>8+ years</strong> of experience building
+            low-latency trading infrastructure. My work spans order matching engines,
+            market data feeds, and latency profiling tools — all optimised down to
+            the cache line.
+          </p>
+          <p>
+            I believe performance is a feature, not an afterthought. Every microsecond
+            matters when you're competing for liquidity, which is why I focus on
+            lock-free data structures, kernel bypass (DPKC), and careful memory layout.
+          </p>
+          <p>
+            Currently I work at <strong>Aether Innovations</strong> in London, where I
+            design next-generation exchange simulators and lead the migration of legacy
+            C++ systems to Rust.
+          </p>
+        </div>
+        <div class="about-philosophy">
+          <h3>Philosophy</h3>
+          <ul>
+            <li><span class="highlight">Measure, don't guess</span> — profile before you optimise</li>
+            <li><span class="highlight">Own the stack</span> — understand the hardware your code runs on</li>
+            <li><span class="highlight">Simplicity scales</span> — lock-free doesn't mean complex</li>
+            <li><span class="highlight">Ship fast, ship safe</span> — strong typing prevents bugs at compile time</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SKILLS ========== -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <div class="skill-items">
+            <span class="skill-badge">C++17/20</span>
+            <span class="skill-badge">Rust 2021</span>
+            <span class="skill-badge">Python 3</span>
+            <span class="skill-badge">C</span>
+            <span class="skill-badge">x86-64 ASM</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Low-Latency</h3>
+          <div class="skill-items">
+            <span class="skill-badge">Lock-free structures</span>
+            <span class="skill-badge">DPDK / kernel bypass</span>
+            <span class="skill-badge">eBPF</span>
+            <span class="skill-badge">SIMD intrinsics</span>
+            <span class="skill-badge">NUMA-aware alloc</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Frameworks &amp; Tools</h3>
+          <div class="skill-items">
+            <span class="skill-badge">Tokio</span>
+            <span class="skill-badge">Crossbeam</span>
+            <span class="skill-badge">libbpf</span>
+            <span class="skill-badge">CMake</span>
+            <span class="skill-badge">Cargo</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Infrastructure</h3>
+          <div class="skill-items">
+            <span class="skill-badge">Linux perf</span>
+            <span class="skill-badge">Flame graphs</span>
+            <span class="skill-badge">GitHub Actions</span>
+            <span class="skill-badge">Docker</span>
+            <span class="skill-badge">Prometheus + Grafana</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE ========== -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Principal Engineer</h3>
+              <span class="timeline-org">Aether Innovations</span>
+              <span class="timeline-date">2026 – Present</span>
+            </div>
+            <ul>
+              <li>Design and implement a next-generation exchange simulator in Rust, achieving <strong>sub-100ns</strong> order processing latency.</li>
+              <li>Lead migration of legacy C++ matching engine to Rust, reducing segfault-related incidents by <strong>90%</strong>.</li>
+              <li>Mentor a team of 5 engineers on low-latency patterns and profiling methodology.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Staff Software Engineer</h3>
+              <span class="timeline-org">Quantum Dynamics</span>
+              <span class="timeline-date">2024 – 2026</span>
+            </div>
+            <ul>
+              <li>Built a lock-free MPSC queue in C++20 with <strong>40%</strong> lower tail latency than the previous lock-based implementation.</li>
+              <li>Developed a kernel-bypass market data feed handler using DPDK, parsing 10 Gbps UDP multicast with <strong>&lt;5μs</strong> jitter.</li>
+              <li>Created an eBPF-based latency profiler used daily by the trading desk to identify micro-bursts.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Senior Software Engineer</h3>
+              <span class="timeline-org">DataSphere Inc.</span>
+              <span class="timeline-date">2022 – 2024</span>
+            </div>
+            <ul>
+              <li>Redesigned the core order matching engine to use a lock-free hash array mapped trie, improving throughput by <strong>3x</strong>.</li>
+              <li>Introduced SIMD-accelerated order book snapshots, reducing serialisation time from 12μs to <strong>1.8μs</strong>.</li>
+              <li>Implemented a real-time risk-check layer in Rust, cutting cross-thread latency by <strong>60%</strong>.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Software Engineer</h3>
+              <span class="timeline-org">CloudPeak Technologies</span>
+              <span class="timeline-date">2020 – 2022</span>
+            </div>
+            <ul>
+              <li>Built a distributed order routing gateway in Rust, handling <strong>200k+</strong> orders/second with 99.9th percentile latency under 50μs.</li>
+              <li>Developed a custom lock-free slab allocator that reduced heap contention by <strong>70%</strong>.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <h3>Junior Software Engineer</h3>
+              <span class="timeline-org">NexGen Solutions</span>
+              <span class="timeline-date">2018 – 2020</span>
+            </div>
+            <ul>
+              <li>Contributed to a C++ risk management platform, focusing on real-time P&amp;L calculations and position keeping.</li>
+              <li>Wrote automated test harnesses in Python, increasing test coverage from <strong>45%</strong> to <strong>85%</strong>.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS ========== -->
+  <section id="projects" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-header">
+            <h3>lockfree-queue</h3>
+            <span class="project-lang">C++17/20</span>
+          </div>
+          <p>A lock-free multi-producer multi-consumer queue for low-latency inter-thread communication. Uses acquire-release semantics and backoff strategies to minimise contention.</p>
+          <div class="project-tech">
+            <span>C++17</span><span>C++20</span><span>SIMD intrinsics</span>
+          </div>
+          <a href="https://github.com/avolkov-II/lockfree-queue" class="project-link" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+        </article>
+        <article class="project-card">
+          <div class="project-header">
+            <h3>order-matching-engine</h3>
+            <span class="project-lang">Rust</span>
+          </div>
+          <p>A high-performance limit order book and matching engine supporting price-time priority. Built with Tokio for async I/O and Crossbeam for lock-free communication.</p>
+          <div class="project-tech">
+            <span>Rust 2018</span><span>Tokio 0.2</span><span>Crossbeam 0.8</span>
+          </div>
+          <a href="https://github.com/avolkov-II/order-matching-engine" class="project-link" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+        </article>
+        <article class="project-card">
+          <div class="project-header">
+            <h3>market-data-feed</h3>
+            <span class="project-lang">C++ / Rust</span>
+          </div>
+          <p>A kernel-bypass market data feed handler using DPDK. Parses 10 Gbps UDP multicast with ultra-low jitter, exposing a zero-copy Rust API.</p>
+          <div class="project-tech">
+            <span>C++20</span><span>DPDK 21.11</span><span>Rust 2021</span>
+          </div>
+          <a href="https://github.com/avolkov-II/market-data-feed" class="project-link" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+        </article>
+        <article class="project-card">
+          <div class="project-header">
+            <h3>latency-profiler</h3>
+            <span class="project-lang">Rust / eBPF</span>
+          </div>
+          <p>An end-to-end latency profiler for distributed trading systems. Uses eBPF probes and produces flame graphs to identify micro-bursts and tail-latency outliers.</p>
+          <div class="project-tech">
+            <span>Rust 2021</span><span>eBPF</span><span>libbpf 1.0</span><span>C++20</span>
+          </div>
+          <a href="https://github.com/avolkov-II/latency-profiler" class="project-link" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EDUCATION ========== -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section-title">Education</h2>
+      <div class="education-card">
+        <div class="edu-icon" aria-hidden="true">&#x1F393;</div>
+        <div class="edu-details">
+          <h3>MEng Computer Science</h3>
+          <p class="edu-school">Imperial College London</p>
+          <p class="edu-year">2012 – 2016</p>
+          <p class="edu-note">Dissertation: <em>Lock-Free Data Structures for Real-Time Trading Systems</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-intro">
+        I'm always open to discussing high-performance engineering challenges,
+        open-source contributions, or speaking opportunities.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:alexei.volkov@example.com" class="contact-item" aria-label="Email">
+          <span class="contact-icon" aria-hidden="true">&#x2709;</span>
+          <span>alexei.volkov@example.com</span>
+        </a>
+        <a href="https://github.com/avolkov-II" class="contact-item" target="_blank" rel="noopener" aria-label="GitHub">
+          <span class="contact-icon" aria-hidden="true">&#x1F5A5;</span>
+          <span>github.com/avolkov-II</span>
+        </a>
+        <a href="https://linkedin.com/in/avolkov" class="contact-item" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <span class="contact-icon" aria-hidden="true">&#x1F517;</span>
+          <span>linkedin.com/in/avolkov</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2026 Alexei Volkov. Built with &#x2764; and zero latency overhead.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
